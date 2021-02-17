@@ -23,6 +23,9 @@ RUN apt-get -qq update \
       lib32z1 \
       unzip \
       locales \
+      ruby \
+      ruby-dev \
+      rubygems-integration \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN locale-gen en_US.UTF-8
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'

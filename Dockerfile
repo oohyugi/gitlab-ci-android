@@ -9,7 +9,7 @@ ENV ANDROID_HOME "${ANDROID_SDK_ROOT}"
 ENV PATH "$PATH:${ANDROID_SDK_ROOT}/cmdline-tools/latest/bin:${ANDROID_SDK_ROOT}/platform-tools"
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get -qq update \
+RUN apt-get -qqy update \
  && apt-get install -qqy --no-install-recommends \
       bzip2 \
       curl \
